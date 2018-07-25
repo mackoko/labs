@@ -3,7 +3,9 @@ services:
   web:
     image: fundamentalsofdocker/ch08-web:1.0
     ports:
-      - 3000:3000
+      # - host : container
+#      - 3111:3000
+      - 3000
   db:
     image: fundamentalsofdocker/ch08-db:1.0
     volumes:
